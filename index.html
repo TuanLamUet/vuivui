@@ -18,8 +18,11 @@
     </div>
     <script>
         function hello() {
-            document.getElementById('no').innerHTML="có";
-            setTimeout(function(){alert('anh biết mà :v')},1000);
+            document.getElementById('no').innerHTML="Có";
+            setTimeout(function(){
+                alert('anh biết mà :v')
+                document.getElementById('yes').style.opacity="0";                 
+            },1000);
         }
     </script>
 </body>
