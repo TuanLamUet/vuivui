@@ -1,0 +1,48 @@
+html{
+    font-size: 62.5%;
+}
+*{
+    margin:0;
+    padding:0;
+}
+button{
+    padding: 1.5rem 3.5rem;
+    outline: none;
+    border: 1px solid white;
+    background:#e74c3c;
+    font-size: 1.5rem;
+    color: white;
+    
+}
+h1{
+    color:white;
+    font-size: 5rem;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    
+
+}
+.container{
+    background-image: linear-gradient(to right top, rgba(209,107,165,0.3), rgba(95,251,241,0.3)), url(./Images_shutterstock_1201871584.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    /*view hight*/
+    background-attachment: fixed;
+    position: relative;
+}
+.Say--Yes{
+    position: absolute;
+    top: 65%;
+    left: 20%;
+    
+}
+
+.Say--No{
+    position: absolute;
+    top: 65%;
+    left: 55%;
+    
+}

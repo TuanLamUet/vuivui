@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>VuiVui</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Chang có yêu anh không?</h1>
+        
+        <button class="Say--Yes" id="yes" onclick="alert('Anh biết mà')">Có</button>
+        <div class="view">
+            <button class="Say--No" id="no" onclick="hello()">Không</button>
+        </div>
+    </div>
+    <script>
+        function hello() {
+            document.getElementById('no').style.display ="none";
+        }
+    </script>
+</body>
+</html>
