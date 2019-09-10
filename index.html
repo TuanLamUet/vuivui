@@ -27,9 +27,10 @@
         function yes() {
             setTimeout(function() {
                 alert('Đúng ý anh không lệch đi đâu được')},200);
-            var content = getElementbyId('yes'),innerHTML;
+            var content = getElementbyId('yes').innerHTML;
             if(content==="Không") {
                 document.getElementById('yes').innerHTML = "Có";
+                document.getElementById('no').innerHTML = "Không";
                 }
         }
     </script>
