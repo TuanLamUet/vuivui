@@ -13,16 +13,19 @@
         
         <button class="Say--Yes" id="yes" onclick="alert('Đúng ý anh không lệch đi đâu được')">Có</button>
         <div class="view">
-            <button class="Say--No" id="no" onclick="hello()">Không</button>
+            <button class="Say--No" id="no" onclick="no()">Không</button>
         </div>
     </div>
     <script>
-        function hello() {
+        function no() {
             document.getElementById('no').innerHTML="Có";
-            document.getElementById('yes').style.opacity="0";  
+            document.getElementById('yes').  
             setTimeout(function(){
                 alert('anh biết mà :v')               
             },800);
+        }
+        function yes() {
+            document.getElementById('yes').innerHTML = "Có";   
         }
     </script>
 </body>
