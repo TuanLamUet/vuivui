@@ -11,7 +11,7 @@
     <div class="container">
         <h1>Chang có yêu anh không?</h1>
         
-        <button class="Say--Yes" id="yes" onclick="alert('Đúng ý anh không lệch đi đâu được')">Có</button>
+        <button class="Say--Yes" id="yes" onclick="yes()">Có</button>
         <div class="view">
             <button class="Say--No" id="no" onclick="no()">Không</button>
         </div>
@@ -19,13 +19,18 @@
     <script>
         function no() {
             document.getElementById('no').innerHTML="Có";
-            document.getElementById('yes').  
+            document.getElementById('yes').innerHTML ="Không";
             setTimeout(function(){
                 alert('anh biết mà :v')               
             },800);
         }
         function yes() {
-            document.getElementById('yes').innerHTML = "Có";   
+            setTimeout(function() {
+                alert('Đúng ý anh không lệch đi đâu được')},200);
+            var content = getElementbyId('yes'),innerHTML;
+            if(content==="Không") {
+                document.getElementById('yes').innerHTML = "Có";
+                }
         }
     </script>
 </body>
